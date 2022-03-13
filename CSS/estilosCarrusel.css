@@ -1,0 +1,35 @@
+.wrapper{
+	width: 100%;
+}
+
+.wrapper .carousel{
+	max-width: 800px;
+}
+
+.carousel .card{
+	border-radius: 10px;
+	width: 250px;
+	height: 250px;
+	overflow: hidden;
+}
+
+.owl-dots{
+	text-align: center;
+	margin-top: 40px;
+}
+
+.owl-dot{
+	height: 15px;
+	width: 45px;
+	border-radius: 25px;
+	cursor: pointer;
+	outline: none;
+	margin: 0 5px;
+	border: 2px solid #0072bc !important;
+	transition: all 0.3s ease;
+}
+
+.owl-dot:hover,
+.owl-dot.active{
+	background-color: #0072bc !important;
+}

@@ -1,0 +1,604 @@
+*{
+	box-sizing: border-box;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: 'Arial', sans-serif;
+}
+
+aside{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	width: 340px;
+	height: 100vh;
+	padding: 50px 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.asiderecolor{
+	background-color: lightskyblue;
+}
+
+section{
+	display: flex;
+	flex-direction: column;
+	border-bottom: 2px solid gray;
+	padding: 90px 40px;
+	min-height: 100vh;
+}
+
+hr{
+	width: 90%;
+	height: 1px;
+	color: #fff;
+	border: solid 1px;
+	background-color: #fff;
+	margin-bottom: 40px;
+	margin-top: 20px;
+}
+
+.linearecolor{
+	background-color: lightskyblue;
+	color: lightskyblue;
+}
+
+.contenedor{
+	display: flex;
+}
+
+/*Estilos del Aside*/
+
+.foto-personal{
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	margin-bottom: 25px;
+	border: none;
+}
+
+.menu ul{
+	padding: 0;
+}
+
+.menu li{
+	list-style: none;
+	cursor: pointer;
+	transition: 0.2s;
+	margin-bottom: 8px;
+}
+
+.menu li:hover{
+	color: #fff;
+	background-color: lightskyblue;
+}
+
+.menu a{
+	display: block;
+	font-size: 20px;
+	padding: 10px 100px;
+	text-decoration: none;
+	color: black;
+	font-family: 'Anton';
+	transition: 0.2s;
+}
+
+.menu a:hover{
+	text-decoration: underline;
+}
+
+.checkbox{
+	position: relative;
+	width: 50px;
+	height: 22px;
+	-webkit-appearance: none;
+	background-color: lightskyblue;
+	border-radius: 20px;
+	border: solid 1px black;
+	cursor: pointer;
+	outline: none; 
+}
+
+.checkbox:checked{
+	background-color: #fff;
+}
+
+.checkbox::before{
+	content: "";
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	background-color: #fff;
+	border-radius: 20px;
+	top: 1px;
+	left: 4px;
+	transition: 0.2s linear;
+}
+
+.checkbox:checked::before{
+	left: 29px;
+	background-color: lightskyblue;
+}
+
+.bx-menu{
+	display: none;
+	font-size: 55px;
+}
+
+/*Estilos del main*/
+
+.main{
+	position: relative;
+	width: 100%;
+	background-color: lightskyblue;
+	margin-left: 340px;
+}
+
+.mainrecolor{
+	background-color: #fff;
+}
+
+/*Seccion: presentacion*/
+
+.nombre{
+	font-size: 90px;
+	font-family: 'Anton';
+	color: #fff;
+	letter-spacing: 5px;
+	margin-bottom: 15px;
+}
+
+.nombrerecolor{
+	color: lightskyblue;
+}
+
+.nombre p{
+	color: black;
+	display: inline;
+	font-family: 'Anton';
+}
+
+.datos{
+	display: flex;
+	flex-direction: column;
+}
+
+.dato_personal{
+	font-size: 22px;
+	font-family: 'Anton';
+	display: inline;
+	margin: 0;
+}
+
+.celular::after{
+	content: "(313) 542 28 79 ";
+	color: #fff;
+}
+
+.recolorcelular::after{
+	color: lightskyblue;
+}
+
+.email::after{
+	content: "oscarcaballero22.oc@gmail.com";
+	color: #fff;
+}
+
+.emailrecolor::after{
+	color: lightskyblue;
+}
+
+.descripcion{
+	font-size: 19px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.redes_sociales{
+	display: flex;
+	overflow: hidden;
+}
+
+.icono{
+	text-decoration: none;
+	color: #fff;
+	background-color: black;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	margin-right: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.icono .bx{
+	font-size: 35px;
+	position: absolute;
+	z-index: 50;
+	transition: 0.2s;
+}
+
+.hover{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background-color: lightskyblue;
+	transform: translateY(70px);
+	transition: 0.3s;
+}
+
+.hover-recolor{
+	background-color: #fff;
+}
+
+.icono:hover .hover{
+	transform: translateY(0px);
+}
+
+.icono:hover .bx{
+	color: black;
+	font-size: 40px;
+	border-radius: 5px;
+	box-shadow: 0px 2px 6px #fff;
+}
+
+.titulo{
+	font-family: 'Anton';
+	font-size: 50px;
+	margin: 0;
+}
+
+.titulo2{
+	display: inline;
+	font-family: 'Anton';
+	font-size: 50px;
+	color: #fff;
+	letter-spacing: 2px;
+}
+
+.tecnica-recolor{
+	color: lightskyblue;
+}
+
+.universitaria-recolor{
+	color: lightskyblue;
+}
+
+/*Seccion: educacion*/
+
+.curso{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.sede h2{
+	margin-bottom: 0;
+	font-size: 20px;
+}
+
+.fecha{
+	color: #fff;
+}
+
+.fecha1-recolor{
+	color: black;
+}
+
+.fecha2-recolor{
+	color: black;
+}
+
+.fecha3-recolor{
+	color: black;
+}
+
+/*seccion:  intereses*/
+
+.intereses{
+	padding: 60px 40px;
+}
+
+.intereses p{
+	max-width: 750px;
+}
+
+.interesrecolor{
+	color: lightskyblue;
+	letter-spacing: 2px;
+}
+
+/*Seccion:  habilidades*/
+
+.habilidadrecolor{
+	color: lightskyblue;
+	letter-spacing: 2px;
+}
+
+.subtitulo{
+	color: #fff;
+	font-size: 20px;
+}
+
+.subtitulorecolor{
+	color: black;
+}
+
+.lenguajes{
+	padding: 15px 0;
+}
+
+.lenguajes i{
+	font-size: 80px;	
+	opacity: 0.7;
+}
+
+.lenguajes i:hover{
+	opacity: 1;
+}
+
+.servicios{
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+.servicios i{
+	margin-right: 5px;
+}
+
+/*Seccion:  Trabajos*/
+
+.byv-recolor{
+	color: lightskyblue;
+	letter-spacing: 1px;
+}
+
+.proyectU-recolor{
+	color: lightskyblue;
+	letter-spacing: 1px;
+}
+
+.abogados{
+	display: flex;
+	align-items: center;
+	padding: 50px 0;
+}
+
+.abogados img, .proyecto_des img{
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+}
+
+.resumen{
+	padding: 25px;
+}
+
+.resumen .titulo{
+	margin-bottom: 15px;
+}
+
+.proyecto_des{
+	display: flex;
+}
+
+.proyecto .video{
+	position: relative;
+	padding-bottom: 56.25%; /* 16/9 ratio */
+	padding-top: 30px; /* IE6 workaround*/
+	height: 0;
+	overflow: hidden;
+}
+
+.video iframe,
+.video object,
+.video embed{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*----------footer----------*/
+
+footer{
+	margin: 0 10px;
+	text-align: center;
+}
+
+footer p{
+	font-size: 14px;
+}
+
+footer p::after{
+	content:"2021 | Diseño y edicion: Oscar David Caballero Moreno";
+}
+
+.goTop{
+	display: none;
+	position: fixed;
+	z-index: 999;
+	bottom: 15px;
+	right: 10px;
+	width: 50px;
+	height: 50px;
+	background-color: #fff;
+	border: none;
+	outline: none;
+	border-radius: 6px;
+	color: lightskyblue;
+	font-size: 25px;
+	transition: 0.2s;
+}
+
+.goToprecolor{
+	background-color: lightskyblue;
+	color: #fff;
+}
+
+.goTop:hover{
+	transform: translateY(-10px);
+	color: #000;
+}
+
+/*----Adaptacion a diferentes tamaños de pantalla-----------------------*/
+
+@media screen and (max-width: 1260px){
+	aside{
+		width: 300px;
+	}
+	.main{
+		margin-left: 300px;
+	}
+}
+
+@media screen and (max-width: 1220px){
+	aside{
+		width: 240px;
+	}
+	.main{
+		margin-left: 240px;
+	}
+}
+
+@media screen and (max-width: 1180px){
+	aside{
+		width: 220px;
+	}
+	.foto-personal{
+		width: 150px;
+		height: 150px;
+	}
+	.main{
+		margin-left: 220px;
+	}
+}
+
+@media screen and (max-width: 1135px){
+	.contenedor{
+		flex-direction: column;
+	}
+	aside{
+		position: static;
+		top: 0;
+		width: 100%;
+		height: 130px;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.checkbox{
+		display: none;
+	}
+	.foto-personal{
+		width: 120px;
+		height: 120px;
+		margin-top: 25px;
+	}
+	.menu ul{
+		display: flex;
+		flex-direction: row;
+	}
+	.menu a{
+		padding: 5px 30px;
+	}
+	.main{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.goTop{
+		display: block;
+	}
+}
+
+@media screen and (max-width: 840px){
+	aside{
+		flex-direction: column;
+		height: 200px;
+	}
+	section{
+		padding: 50px 10px;
+	}
+	.foto-personal{
+		margin-bottom: 5px;
+	}
+	.menu{
+		display: none;
+		position: absolute;
+		z-index: 500;
+		top: 22px;
+		width: 90%;
+		background-color: #fff;
+		border-radius: 10px;
+		border: solid 1px black;
+	}
+	.bx-menu{
+		display: block;
+	}
+	.wrapper{
+		display: flex;
+		justify-content: center;
+	}
+	.proyecto_des{
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+	}
+	.foto-univeridad img{
+		width: 220px
+	}
+	.menu-modal{
+		display: block;
+	}
+	.menu-modal ul{
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.presentacion{
+		text-align: center;
+		justify-content: center;
+	}
+	.dato_personal{
+		font-size: 20px;
+	}
+	.redes_sociales{
+		justify-content: center;
+	}
+	.icono:hover .bx{
+		color: #fff;
+	}
+	.curso{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.fecha{
+		margin-top: 0;
+		color: #000;
+	}
+	.intereses, .habilidades{
+		text-align: center;
+	}
+	.abogados, .proyecto{
+		flex-direction: column;
+		text-align: center;
+	}
+	.redes_sociales{
+		flex-wrap: wrap;
+	}
+	.hover{
+		display: none;
+	}
+}
