@@ -56,4 +56,6 @@ btnInterruptor.addEventListener("click", ()=>{
 	proyectU.classList.toggle("proyectU-recolor")
 
 	gotop.classList.toggle("goToprecolor")
+
+	UserWay.contrastEnable(2)
 });
